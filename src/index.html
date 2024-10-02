@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Carta Aleatoria</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,7 +14,11 @@
   </head>
   <body class="bg-success">
     <div class="container-fluid text-center">
-      <div id="carta" class="card mx-auto mt-5 mb-5" style="width: 380px; height:500px;">
+      <div
+        id="carta"
+        class="card mx-auto mt-5 mb-5"
+        style="width: 380px; height:500px;"
+      >
         <div class="card-body">
           <p class="palo paloArriba text-start"></p>
           <h1 class="cardValue"></h1>
@@ -22,24 +26,37 @@
         </div>
       </div>
       <div class="d-flex flex-column align-items-center">
-        <button id="boton" type="button" class="btn btn-light mb-3">Próxima carta</button>
+        <button id="boton" type="button" class="btn btn-light mb-3">
+          Siguiente Carta
+        </button>
         <form>
           <div class="form-row align-items-center">
             <div class="col-auto">
               <label class="sr-only" for="inlineFormInput"></label>
-              <input type="text" class="form-control mb-2" id="inputWidth" placeholder="Set width in px">
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="inputWidth"
+                placeholder="Width in px"
+              />
             </div>
             <div class="col-auto">
               <label class="sr-only" for="inlineFormInput"></label>
-              <input type="text" class="form-control mb-2" id="inputHeight" placeholder="Set height in px">
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="inputHeight"
+                placeholder="Height in px"
+              />
             </div>
             <div class="col-auto">
-              <button id="botonSize" type="button" class="btn btn-primary mb-2">Submit</button>
+              <button id="botonSize" type="button" class="btn btn-primary mb-2">
+                Ajustar
+              </button>
             </div>
           </div>
         </form>
       </div>
-    </div>
     </div>
   </body>
 </html>
